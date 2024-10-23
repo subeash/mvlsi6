@@ -1,115 +1,115 @@
   {
 	  "version": 2.0,
   "questions": [
-    {
-      "question": "1. What does the term 'Gummel plot' specifically refer to in the context of BJT characterization?",
-      "answers": {
-        "a": "A plot of base-emitter voltage (V_BE) versus collector current (I_C)",
-        "b": "A plot of base current (I_B) versus base-emitter voltage (V_BE)",
-        "c": "A plot of collector current (I_C) versus base current (I_B)",
-        "d": "A plot of base-emitter voltage (V_BE) versus base current (I_B)"
-      },
-      "correctAnswer": "b",
-      "difficulty": "beginner"
+  {
+        "question": "1. What is the primary assumption made in the depletion approximation for a pn junction?",
+        "answers": {
+            "a": "The charge carrier densities are significant within the depletion region.",
+            "b": "The charge carrier densities are negligible within the depletion region.",
+            "c": "The electric field is zero within the depletion region.",
+            "d": "The potential difference is constant within the depletion region."
+        },
+        "correctAnswer": "b",
+        "difficulty": "beginner"
     },
     {
-      "question": "2. In a Gummel plot, what does the slope of the base current (I_B) versus base-emitter voltage (V_BE) plot represent?",
-      "answers": {
-        "a": "Saturation current (I_S)",
-        "b": "Current gain (\u03b2)",
-        "c": "Emitter efficiency",
-        "d": "Thermal voltage (V_T)"
-      },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
+        "question": "2. What defines the depletion width (W) in a pn junction?",
+        "answers": {
+            "a": "The width of the region where the charge carrier densities are zero.",
+            "b": "The width of the region where the electric field is constant.",
+            "c": "The width of the region where the semiconductor is neutral.",
+            "d": "The width of the region where the potential is constant."
+        },
+        "correctAnswer": "a",
+        "difficulty": "beginner"
     },
     {
-      "question": "3. The Gummel plot is commonly used to determine which of the following parameters of a BJT?",
-      "answers": {
-        "a": "Collector-emitter voltage (V_CE)",
-        "b": "Base-emitter voltage (V_BE)",
-        "c": "Saturation current (I_S)",
-        "d": "Thermal resistance (R_th)"
-      },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
+        "question": "3. What happens to the electric field within the depletion region of a pn junction?",
+        "answers": {
+            "a": "It remains zero.",
+            "b": "It varies linearly.",
+            "c": "It is constant.",
+            "d": "It varies exponentially."
+        },
+        "correctAnswer": "b",
+        "difficulty": "intermediate"
     },
     {
-      "question": "4. What is the primary purpose of characterizing a BJT using the Gummel plot method?",
-      "answers": {
-        "a": "To analyze power dissipation",
-        "b": "To optimize frequency response",
-        "c": "To extract key parameters like current gain and saturation current",
-        "d": "To measure voltage drop across the collector-emitter junction"
-      },
-      "correctAnswer": "c",
-      "difficulty": "intermediate"
+        "question": "4. How does the carrier concentration change outside the depletion region in a pn junction?",
+        "answers": {
+            "a": "It remains negligible.",
+            "b": "It is equal to the intrinsic carrier concentration.",
+            "c": "It is equal to the doping concentration.",
+            "d": "It varies linearly."
+        },
+        "correctAnswer": "c",
+        "difficulty": "beginner"
     },
     {
-      "question": "5. What does the ideality factor in a BJT refer to?",
-      "answers": {
-        "a": "A measure of how closely the BJT follows the ideal exponential relationship",
-        "b": "A measure of collector current efficiency",
-        "c": "A measure of base current leakage",
-        "d": "A measure of temperature dependence"
-      },
-      "correctAnswer": "a",
-      "difficulty": "intermediate"
+        "question": "5. In the depletion approximation, what is assumed about the semiconductor outside the depletion region?",
+        "answers": {
+            "a": "It is electrically neutral.",
+            "b": "It has a constant electric field.",
+            "c": "It has a constant potential.",
+            "d": "It is fully ionized."
+        },
+        "correctAnswer": "a",
+        "difficulty": "beginner"
     },
     {
-      "question": "6. How does the Gummel plot help in analyzing BJT operation in different regions?",
-      "answers": {
-        "a": "By identifying breakdown voltage",
-        "b": "By showing linear and saturation regions clearly",
-        "c": "By measuring thermal resistance",
-        "d": "By calculating power gain"
-      },
-      "correctAnswer": "b",
-      "difficulty": "intermediate"
+        "question": "6. What is the charge density distribution for an abrupt pn junction?",
+        "answers": {
+            "a": "Uniform across the junction.",
+            "b": "Zero in the depletion region.",
+            "c": "A step function changing abruptly at the junction.",
+            "d": "A linear function."
+        },
+        "correctAnswer": "c",
+        "difficulty": "intermediate"
     },
     {
-      "question": "7. What does the slope of the collector current (I_C) versus base-emitter voltage (V_BE) plot determine?",
-      "answers": {
-        "a": "Emitter efficiency",
-        "b": "Saturation current (I_S)",
-        "c": "Current gain (\u03b2)",
-        "d": "Thermal voltage (V_T)"
-      },
-      "correctAnswer": "b",
-      "difficulty": "advanced"
+        "question": "7. What is the typical shape of the electric field profile in the depletion region of an abrupt pn junction?",
+        "answers": {
+            "a": "Uniform",
+            "b": "Parabolic",
+            "c": "Triangular",
+            "d": "Rectangular"
+        },
+        "correctAnswer": "c",
+        "difficulty": "intermediate"
     },
     {
-      "question": "8. In a Gummel plot, what does the term 'early effect' refer to?",
-      "answers": {
-        "a": "Voltage dependence of collector current",
-        "b": "Temperature dependence of base current",
-        "c": "Voltage dependence of base current",
-        "d": "Temperature dependence of collector current"
-      },
-      "correctAnswer": "a",
-      "difficulty": "advanced"
+        "question": "8. How is the built-in potential (V_bi) related to the doping concentrations in a pn junction?",
+        "answers": {
+            "a": "It is independent of the doping concentrations.",
+            "b": "It decreases with increasing doping concentrations.",
+            "c": "It increases with increasing doping concentrations.",
+            "d": "It varies linearly with the doping concentrations."
+        },
+        "correctAnswer": "c",
+        "difficulty": "intermediate"
     },
     {
-      "question": "9. How can the Gummel plot aid in optimizing BJT circuit design?",
-      "answers": {
-        "a": "By minimizing thermal resistance",
-        "b": "By maximizing current gain",
-        "c": "By ensuring proper biasing and performance",
-        "d": "By increasing breakdown voltage"
-      },
-      "correctAnswer": "c",
-      "difficulty": "advanced"
+        "question": "9. What effect does reverse bias have on the depletion width in a pn junction?",
+        "answers": {
+            "a": "It decreases the depletion width.",
+            "b": "It increases the depletion width.",
+            "c": "It does not affect the depletion width.",
+            "d": "It makes the depletion width constant."
+        },
+        "correctAnswer": "b",
+        "difficulty": "intermediate"
     },
     {
-      "question": "10. What region of operation is characterized by a Gummel plot where collector current (I_C) remains relatively constant with changes in base-emitter voltage (V_BE)?",
-      "answers": {
-        "a": "Cut-off",
-        "b": "Active",
-        "c": "Saturation",
-        "d": "Breakdown"
-      },
-      "correctAnswer": "c",
-      "difficulty": "advanced"
+        "question": "10. Which parameter is typically used to describe the extent of band bending in a pn junction?",
+        "answers": {
+            "a": "Electric field",
+            "b": "Charge density",
+            "c": "Built-in potential",
+            "d": "Depletion width"
+        },
+        "correctAnswer": "c",
+        "difficulty": "advanced"
     }
   ]
 }
