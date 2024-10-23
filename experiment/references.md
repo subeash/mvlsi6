@@ -1,9 +1,11 @@
 ## References
 #### Books
-1) Christian C. Enz and Eric A. Vittoz, Charge-Based MOS Transistor Modeling: The EKV model for low-power and RF IC design, Wiley, 2006
+1) Donald A. Neamen, Semiconductor Physics and Devices, McGraw-Hill Education, 2012
 
-2) S. M. Sze and Kwok K. Ng, Physics of Semiconductor Devices, Wiley, 2006
+2) Simon M. Sze and Kwok K. Ng, Physics of Semiconductor Devices, Wiley-Interscience, 2006 (3rd Edition)
+
+3) Ben G. Streetman and Sanjay Banerjee, Solid State Electronic Devices, Pearson, 2015 (7th Edition)
 
 #### Video Lectures
-- [MOS capacitor](https://www.youtube.com/watch?v=Gwyi2brc0QQ)
+- [p-n Junction Diode](https://nptel.ac.in/courses/117107095)
 
