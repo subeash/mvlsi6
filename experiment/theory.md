@@ -1,60 +1,90 @@
 ## Theory
 **Introduction:**  
-The boundary between accumulation and depletion is the flat-band voltage and the boundary between depletion and inversion is the threshold voltage.
+A pn junction is formed when p-type and n-type semiconductor materials are brought together, creating a junction with distinct electrical properties. In the depletion mode, the junction is characterized by a region where the charge carriers are depleted, and the primary focus is on the behavior of the junction when no external bias is applied.
 
-![](./images/tvic.jpg)  
+1\. Depletion Region
+--------------------
+
+The depletion region is a key feature of the pn junction in depletion mode. It forms around the junction where the p-type and n-type materials meet. In this region, the majority charge carriers (holes in the p-type and electrons in the n-type) recombine, leaving behind a region with fixed, ionized dopant atoms. This region is devoid of free charge carriers and is characterized by an electric field that opposes further diffusion of carriers.
+
+2\. Band Bending
+----------------
+
+Band bending occurs in the depletion region due to the built-in electric field. The energy bands (conduction and valence bands) curve near the junction interface, reflecting the potential difference across the junction. This bending indicates the work function difference between the p-type and n-type regions and determines the barrier height that carriers must overcome to move across the junction.
+
+3\. Electric Field and Potential Distribution
+---------------------------------------------
+
+The electric field within the depletion region is directed from the n-type to the p-type side. It results from the separation of positive and negative charges left behind after recombination. This field creates a potential difference known as the built-in potential, which can be calculated using Poisson's equation and the charge density distribution in the depletion region.
+
+4\. Charge Carrier Concentrations
+---------------------------------
+
+Outside the depletion region, the charge carrier concentrations are equal to the doping levels of the p-type and n-type materials. In the p-type region, the carrier concentration is approximately the acceptor concentration ($$N_A$$), while in the n-type region, it is approximately the donor concentration ($$N_D$$).
+
+5\. Depletion Width
+-------------------
+
+The depletion width,$$W$$, is the distance over which the electric field extends in the depletion region. It can be determined from the charge density and the built-in potential. The width varies with the doping concentrations of the p-type and n-type materials and affects the junction's electrical characteristics.
+
+6\. Electrical Characteristics
+------------------------------
+
+In depletion mode, the pn junction is electrically neutral outside the depletion region. The depletion approximation simplifies the analysis by assuming constant doping levels outside the depletion region and a fixed depletion width. Key electrical characteristics that can be derived include:
+
+*   **Built-in Potential:** The voltage across the junction created by the charge separation in the depletion region.
+*   **Electric Field:** The intensity of the field within the depletion region, which influences carrier movement and junction behavior.
+*   **Carrier Concentration Profiles:** The distribution of electrons and holes within the depletion region.
+*   **Depletion Width:** The extent of the depletion region, which is a function of doping levels and built-in potential.
+
+Understanding these electrical properties is essential for analyzing and designing semiconductor devices that utilize pn junctions, such as diodes, transistors, and photovoltaic cells. 
+
+<img src="images/FET.png"  />
+
 **Fig. 1. Threshold Voltage and Inversion charge**
 
   
 
-### MOS Capacitor's three regimes-Accumulation, Depletion, Inversion
+In an abrupt pn junction, the doping concentration changes abruptly from p-type to n-type, creating a well-defined interface between the two regions. This sharp transition is idealized for analytical solutions. To understand the electrical behavior of this junction, key properties are often analyzed within the context of the depletion approximation.
 
-A MOS Capacitor can be in three regimes: accumulation, depletion, and inversion [1,2]. The boundary between accumulation and depletion is the flat-band voltage, and the boundary between depletion and inversion is the threshold voltage. The flat-band voltage, denoted as $$V_{fb}$$ or $$V_{bi}$$, is defined as $$\phi_m - \phi_s$$, where $$\phi_m$$ is the work function of the metal and $$\phi_s$$ is the work function of the semiconductor substrate.
+In the depletion approximation, the region around the pn junction where the doping changes is called the depletion region. Within this region, it is assumed that the majority carriers (holes in the p-type region and electrons in the n-type region) have diffused away, leaving behind a region depleted of free charge carriers. The depletion region is characterized by a width _W_, where the charge carrier densities are very low and the primary contributors to the electric field are the fixed ionized donor and acceptor atoms.
 
-At the flat-band voltage, the bands are flat, resulting in an electric field of zero throughout the semiconductor. The hole concentration $$p$$ equals the acceptor concentration, and the charge density $$\rho$$ is zero.
+Outside the depletion region, the charge carrier densities are assumed to be equal to the doping concentrations of the respective regions. In the p-type region, the carrier density is approximately equal to the acceptor concentration ($$N_A$$), while in the n-type region, it is approximately equal to the donor concentration ($$N_D$$).
 
-Accumulation occurs when the gate voltage $$V$$ is negative, attracting holes to the oxide interface. This causes the valence band to bend up towards the Fermi energy, increasing the hole concentration $$p$$ near the oxide interface. The Fermi energy in the metal (represented by the black line on the left in the band diagram) moves up for negative voltages, indicating an increase in electron energy.
+Due to charge neutrality outside the depletion region, the semiconductor as a whole remains electrically neutral. The charge density distribution in the depletion region can be derived from Poisson's equation and is essential for understanding the junction's electrical properties.
 
-In the depletion regime, a positive gate voltage pushes mobile holes away from the oxide, leaving negatively charged acceptors behind. The valence band bends away from the Fermi energy at the oxide, resulting in a lower hole concentration near the oxide. The negative charge in the semiconductor is balanced by a positive charge on the metal surface, as indicated by the charge plot arrow. As the gate voltage increases positively, the depletion width grows, and the bands bend further down. Eventually, the conduction band gets closer to the Fermi energy than the valence band, leading to weak inversion where $$n > p$$ near the oxide. Strong inversion occurs when $$n = N_A$$ (acceptor concentration) at the oxide interface, at the threshold voltage $$V_T$$.
+To calculate the characteristics of the pn junction using the depletion approximation, the following properties are commonly determined:
 
-At $$V > V_T$$, an inversion channel forms at the semiconductor/oxide interface, characterized by a layer of mobile electrons. In the inversion state, the electric field in the semiconductor remains constant, while it increases within the oxide layer.
+*   **Band Bending:** The change in the energy bands across the junction due to the built-in electric field. This bending reflects the work required to move a charge from one side of the junction to the other.
+*   **Local Electric Field:** The electric field within the depletion region that results from the separation of charges. This field influences carrier motion and is crucial for understanding junction behavior under various biasing conditions.
+*   **Carrier Concentration Profiles:** The distribution of electron and hole concentrations throughout the junction, which shows how these concentrations vary from the center of the depletion region to the edges.
+*   **Local Conductivity:** The ability of the semiconductor to conduct electric current, which is affected by the carrier concentrations and their mobility within different regions of the junction.
 
-### Determining the band bending
+Using the depletion approximation allows for simplification of these calculations by assuming a fixed depletion width and constant carrier concentrations outside this region. The charge density distribution for an abrupt junction, which reflects the variation of charge density within the depletion region, can be calculated to provide a detailed picture of the junction's electrical characteristics.
 
-To calculate the band bending, we start with Gauss's law,
+$$ρ(x)= \\begin{cases} 0 & \\mbox{for } x\\lt x\_p, \\\\ -eN\_A & \\mbox{for } x\_p\\lt x\\lt 0, \\\\ eN\_D & \\mbox{for } 0 \\lt x\\lt x\_n, \\\\ 0 & \\mbox{for } x\_n\\lt x.\\end{cases}$$
 
-$$\\begin{equation} \\nabla \\cdot \\vec{E} = \\frac{\\rho}{\\epsilon\_s\\epsilon\_0}. \\end{equation}$$
+The charge density can be integrated to determine the electric field $$E = \int\frac{\rho}{\epsilon}dx$$ ,
 
-$$Combining \ this \ with \ \\vec{E}=-\\nabla V \ yields \ the \ Poisson \ equation,$$
+$$E(x) = \\begin{cases} 0 & \\mbox{for } x\\lt x\_p, \\\\ -\\frac{eN\_A}{\\epsilon}(x-x\_p) & \\mbox{for } x\_p\\lt x\\lt 0, \\\\ \\frac{eN\_D}{\\epsilon}(x-x\_n) & \\mbox{for } 0 \\lt x\\lt x\_n, \\\\ 0 & \\mbox{for } x\_n\\lt x.\\end{cases}$$
 
-$$\\begin{equation} \\nabla^2V = -\\frac{\\rho}{\\epsilon\_s\\epsilon\_0}, \\end{equation}$$
+At the transition from p-doped to n-doped at x\=0x\=0x=0, there is a maximum in the electric field, $$E = \frac{eN_Ax_p}{\epsilon} = -\frac{eN_Dx_n}{\epsilon}.$$ Due to the charge neutrality condition, $$|N_Ax_p|=|N_Dx_n|.$$ Further $$x_p < 0 < x_n$$ so the electric field is pointed in the negative x-direction, from n towards p. The electric field can be integrated to determine the electrostatic potential $$ϕ=-\int E dx$$ ,
 
-where, for a MOS capacitor with a p-type substrate, the charge density is 
-$$\\rho = e\\left(-N\_A-n+p\\right)$$ and the charge carrier concentrations are,
+$$ϕ(x)= \\begin{cases} -\\frac{eN\_Ax\_p^2}{2\\epsilon} & \\mbox{for } x\\lt x\_p, \\\\ \\frac{eN\_A}{\\epsilon}\\left(\\frac{x^2}{2}-x\_px\\right) & \\mbox{for } x\_p\\lt x\\lt 0, \\\\ -\\frac{eN\_D}{\\epsilon}\\left(\\frac{x^2}{2}-x\_nx\\right) & \\mbox{for } 0 \\lt x\\lt x\_n, \\\\ \\frac{eN\_Dx\_n^2}{\\epsilon} & \\mbox{for } x\_n\\lt x.\\end{cases}$$
 
+The voltage across the junction is the difference in the electrostatic potential $$)V_{bi} - V=\phi (x_n)-\phi(x_p),$$
 
-$$\\begin{equation} n=N\_c(300)\\left(\\frac{T}{300}\\right)^{3/2}\\exp\\left(\\frac{E\_F-E\_c}{k\_BT}\\right)\\qquad \\text{and}\\qquad p=N\_v(300)\\left(\\frac{T}{300}\\right)^{3/2}\\exp\\left(\\frac{E\_v-E\_F}{k\_BT}\\right). \\end{equation}$$
+$$V_{bi} - V= \frac{eN_D x_n^2}{2 \epsilon} + \frac{eN_A x_p^2}{2 \epsilon},$$
 
-Using the relation $$e\\frac{dV}{dx} = -\\frac{E\_v}{dx}$$ the Poisson equation can be written as a second order differential equation for $$E_v(x)$$,
+where $$V\_{bi}$$ is the built-in voltage. Using the charge neutrality condition $$\\left( N_A|x_p|=N_D|x_n|=N_A (W-|x_n|)=N_D (W-|x_p|) \\right),$$ expressions for $$|x_p|$$ and $$|x\_n|$$ can be obtained,
 
-$$ \\begin{equation} \\frac{d^2E\_v}{dx^2} = \\frac{e^2}{\\epsilon\_s\\epsilon\_0}\\left(-N\_A-N\_c\\exp\\left(\\frac{-E\_g-E\_v}{k\_BT}\\right)+N\_v\\exp\\left(\\frac{E\_v}{k\_BT}\\right)\\right). \\end{equation}$$
+$$|x_p| = \frac{N_DW}{N_A+N_D}, \\\\ |x_n| = \frac{N_AW}{N_A+N_D}.$$
 
-### Numerical
+Substituting these expressions into the formula for $$V_{bi}$$ - V and solving for $$W$$ yields,
 
-This differential equation was solved numerically using the shooting method [3]. First the maximum depletion width $$max(x_p)$$ and the threshold voltage $$V_T$$ are estimated using the analytic formulas from the depletion approximation.
-
-
-
-$$\\begin{equation} x\_p = 2\\sqrt{\\frac{\\epsilon\_{\\text{semi}}\\epsilon\_0 k\_BT}{e^2N\_A}\\ln\\left(\\frac{N\_A}{n\_i}\\right)}. \\end{equation}$$ 
-
-$$\\begin{equation} V\_T = \\frac{2t\_{ox}}{\\epsilon\_{ox}}\\sqrt{\\epsilon\_{\\text{semi}}N\_Ak\_BT \\ln \\left (\\frac{N\_A}{n\_i} \\right )} +\\frac{2k\_BT}{e} \\ln \\left (\\frac{N\_A}{n\_i} \\right ) +V\_{fb} \\end{equation}$$
-
-Far from the oxide, the valence band satisfies the conditions $$E_v=k_BTln(N_AN_v)=E_{v0}E_v=k_BTln⁡(\frac{N_A}{N_v})=E_{v0}$$ and $$dE_vdx=0\frac{dE_v}{dx}=0$$. To determine the band bending, we start a distance of $$1.8x_p$$ from the oxide with $$E\_{v} = k\_BT\\ln\\left(\\frac{N\_A}{N\_v}\\right)=E\_{v0}$$ and a small value of $$dE_vdx=0\frac{dE_v}{dx}=0$$. The Poisson equation is integrated numerically using the midpoint method until the semiconductor oxide interface. This gives us the voltage $$V_s$$ at the semiconductor/oxide interface and the electric field $$E_s$$ at that point. The voltage on the gate is,
-
-
-$$\\begin{equation} V = \\frac{\\epsilon\_{\\text{semi}}E\_s}{\\epsilon\_{\\text{ox}}}t\_{\\text{ox}}+V\_s. \\end{equation}$$
-
-This is the correct gate voltage for the boundary conditions we chose on the right, but generally, it may not be the desired gate voltage. The starting position of integration is then adjusted either to the right or left, and the integration process is repeated until the calculated voltage, obtained through numerical integration, matches $$V_{shoot}$$. The simulation produces incorrect results if the valence band or conduction band approach within approximately $$3k_BT$$ from the Fermi energy. This limitation arises because the formulas for nnn and ppp are valid only when the valence and conduction bands are sufficiently far from the Fermi energy.
-
+$$W= \sqrt{\frac{2\epsilon(N_D+N_A)(V_{bi}-V)}{eN_DN_A}}.$$
+$$\\vec{j}\_{n,\\text{drift}}= ne\\mu\_n\\vec{E},  \\vec{j}\_{p,\\text{drift}}= pe\\mu\_p\\vec{E}, $$ 
+$$\\vec{j}\_{n,\\text{diffusion}}= eD\_n\\frac{dn}{dx}, \ and \ \\vec{j}\_{p,\\text{diffusion}}= -eD\_p\\frac{dp}{dx}$$
+ 
  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"></script>    
  
